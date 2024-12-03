@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "react": "18.3.1",
-    "react-native": "0.76.3"
+    "react-native": "0.76.3",
+    "scandit-react-native-datacapture-barcode": "6.19.8",
+    "scandit-react-native-datacapture-core": "6.19.8"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

@@ -1509,6 +1509,21 @@ PODS:
     - React-logger (= 0.76.3)
     - React-perflogger (= 0.76.3)
     - React-utils (= 0.76.3)
+  - scandit-datacapture-frameworks-barcode (6.19.8):
+    - scandit-datacapture-frameworks-core (= 6.19.8)
+    - ScanditBarcodeCapture (= 6.19.8)
+  - scandit-datacapture-frameworks-core (6.19.8):
+    - ScanditCaptureCore (= 6.19.8)
+  - scandit-react-native-datacapture-barcode (6.19.8):
+    - React
+    - scandit-datacapture-frameworks-barcode (= 6.19.8)
+    - scandit-react-native-datacapture-core
+  - scandit-react-native-datacapture-core (6.19.8):
+    - React
+    - scandit-datacapture-frameworks-core (= 6.19.8)
+  - ScanditBarcodeCapture (6.19.8):
+    - ScanditCaptureCore (= 6.19.8)
+  - ScanditCaptureCore (6.19.8)
   - SocketRocket (0.7.1)
   - Yoga (0.0.0)
 
@@ -1577,10 +1592,16 @@ DEPENDENCIES:
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCodegen (from `build/generated/ios`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - scandit-react-native-datacapture-barcode (from `../node_modules/scandit-react-native-datacapture-barcode`)
+  - scandit-react-native-datacapture-core (from `../node_modules/scandit-react-native-datacapture-core`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
+    - scandit-datacapture-frameworks-barcode
+    - scandit-datacapture-frameworks-core
+    - ScanditBarcodeCapture
+    - ScanditCaptureCore
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1709,6 +1730,10 @@ EXTERNAL SOURCES:
     :path: build/generated/ios
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  scandit-react-native-datacapture-barcode:
+    :path: "../node_modules/scandit-react-native-datacapture-barcode"
+  scandit-react-native-datacapture-core:
+    :path: "../node_modules/scandit-react-native-datacapture-core"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -1775,8 +1800,14 @@ SPEC CHECKSUMS:
   React-utils: 2bcaf4f4dfe361344bce2fae428603d518488630
   ReactCodegen: ae99a130606068ed40d1d9c0d5f25fda142a0647
   ReactCommon: 89c87b343deacc8610b099ac764848f0ce937e3e
+  scandit-datacapture-frameworks-barcode: 06a3a5d3d4620baca5796a8f66160ecce3c42ef1
+  scandit-datacapture-frameworks-core: 83534260d89356158dc1277970fb9f1fc3f6b79c
+  scandit-react-native-datacapture-barcode: bcc11e031a8075724d7e4d4020fdcbca7110931a
+  scandit-react-native-datacapture-core: 7962e5e1334cfe0442f043c67eab0a9c7cfef1e2
+  ScanditBarcodeCapture: 426a325f7d211b2e51331b26b310d846e129dfc6
+  ScanditCaptureCore: 0b90bb88c21aed270dce2514cc6914d9d1ffa2f6
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
-  Yoga: f6dc1b6029519815d5516a1241821c6a9074af6d
+  Yoga: 3deb2471faa9916c8a82dda2a22d3fba2620ad37
 
 PODFILE CHECKSUM: 9087fd01b80a6ce83f1e3bc0bebadc1228772ed1
 
